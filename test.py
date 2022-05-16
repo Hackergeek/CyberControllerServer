@@ -1,6 +1,6 @@
 import pyautogui
 import time
-from KeyboardManager import key_press
+# from KeyboardManager import key_press
 time.sleep(2)
 with open('./TcpServer.py', encoding='UTF-8') as f:
 	while True:

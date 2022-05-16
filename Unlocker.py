@@ -14,7 +14,7 @@ pyautogui.press('enter') # enter to login.
 
 #pyautogui.click(1025,513, 2) # click to show the password box
 time.sleep(1)
-pyautogui.typewrite("Asdfghjkl;'",2) # Type the password
+pyautogui.typewrite("skyward",2) # Type the password
 pyautogui.press('enter') # enter to login.
 time.sleep(2)
 

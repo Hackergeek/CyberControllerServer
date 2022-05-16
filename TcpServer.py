@@ -4,12 +4,13 @@ import json
 
 class TcpServer:
     def __init__(self):
-        self.port=2233#设置端口
+        self.port=9999#设置端口
         self.HEAD_LEN=8
         self.tcpServerSocket=socket.socket()#创建socket对象
         hostname= socket.gethostname()#获取本地主机名
         sysinfo = socket.gethostbyname_ex(hostname)
-        hostip=sysinfo[2][2]
+        print(sysinfo[2][0])
+        hostip=sysinfo[2][0]
         self.tcpServerSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)#让端口可以复用
         self.tcpServerSocket.bind((hostip,self.port))#将地址与套接字绑定，且套接字要求是从未被绑定过的
         self.tcpServerSocket.listen(5)#代办事件中排队等待connect的最大数目
