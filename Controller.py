@@ -7,6 +7,8 @@ from CommandMessage import CommandMessage;
 import json
 import pyautogui
 import time
+from KeyboardManager import *
+from service import *
 
 
 def on_message_received(data):
